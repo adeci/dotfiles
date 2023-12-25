@@ -8,7 +8,6 @@ export PATH=/usr/lib/jvm/java-21-openjdk/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -110,12 +109,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#alias files here (for dotfiles sync access)
 source ~/.zsh_profile
 
 #dotfiles sync alias
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # Run on startup commands
+
+## fix x11 display bug
+~/.scripts/x11link.sh
+
+## run neofetch
 neofetch
 
 # Auto added sources
