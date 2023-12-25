@@ -1,2 +1,5 @@
 alias vim="nvim"
 alias zshr="exec zsh"
+
+## fix x11 display bug
+alias wslgfix="~/.scripts/x11link.sh"

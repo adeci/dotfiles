@@ -117,10 +117,6 @@ source ~/.zsh_profile
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # Run on startup commands
-
-## fix x11 display bug
-~/.scripts/x11link.sh
-
 ## run neofetch
 neofetch
 
