@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.zsh_profile
 
 #dotfiles sync alias
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
